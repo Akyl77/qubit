@@ -11,33 +11,37 @@
 <body>
     
     <nav class="nav">
-        <div class="nav-row">
-            <a href="#" class="logo">Qubit.</a>
-            <ul class="nav-list">
-                <li class="nav-list_item"><a href="#">Why Qubit?</a></li>
-                <li class="nav-list_item"><a href="#">Products</a></li>
-                <li class="nav-list_item"><a href="#">Solutions</a></li>
-                <li class="nav-list_item"><a href="#">Customers</a></li>
-                <li class="nav-list_item"><a href="#">Case studies</a></li>
-                <li class="nav-list_item"><a href="#">Resources</a></li>
-                <li class="nav-list_item"><a href="#">More</a></li>
-            </ul>
-            <div class="nav-login">
-                <button class="login-btn">Book a demo</button>
-                <a href="#" class="login-login">Log In</a>
+        <div class="container">
+            <div class="nav-row">
+                <a href="#" class="logo">Qubit.</a>
+                <ul class="nav-list">
+                    <li class="nav-list_item"><a href="#">Why Qubit?</a></li>
+                    <li class="nav-list_item"><a href="#">Products</a></li>
+                    <li class="nav-list_item"><a href="#">Solutions</a></li>
+                    <li class="nav-list_item"><a href="#">Customers</a></li>
+                    <li class="nav-list_item"><a href="#">Case studies</a></li>
+                    <li class="nav-list_item"><a href="#">Resources</a></li>
+                    <li class="nav-list_item"><a href="#">More</a></li>
+                </ul>
+                <div class="nav-login">
+                    <button class="login-btn">Book a demo</button>
+                    <a href="#" class="login-login">Log In</a>
+                </div>
             </div>
         </div>
     </nav>
     
     <header class="header">
-        <div class="header-content">
-            <p class="header-text">Driving growth with personalization.</p>
-            <h1 class="header-title">Make ecommerce <br> <span>More personal.</span></h1>
-            <p class="header-description">Hundreds of brands use Qubit CommerceAI  to power the next generation of product recommendations, 
-                badging and insights to build exceptional customer experiences.</p>
+        <div class="container">
+            <div class="header-wrapper">
+                <p class="header-text">Driving growth with personalization.</p>
+                <h1 class="header-title">Make ecommerce <br> <span>More personal.</span></h1>
+                <p class="header-description">Hundreds of brands use Qubit CommerceAI  to power the next generation of product recommendations, 
+                    badging and insights to build exceptional customer experiences.</p>
+                <input type="text" class="header-input" placeholder="Enter you email">
+                <button class="header-btn">Book a demo</button>
+            </div>
         </div>
-        <input type="text" class="header-input" placeholder="Enter you email">
-        <button class="header-btn">Book a demo</button>
     </header>
 
     <section class="section1">
@@ -59,7 +63,7 @@
 
     <section class="section2">
         <div class="container">
-            <div class="block1">
+            <div class="section2-wrapper">
                 <div class="left">
                     <h2 class="section2-title">Grow 2.5x faster than <br> your competitors.</h2>
                     <div class="left-btn">
@@ -73,15 +77,15 @@
                     <table border="0">
                         <tr>
                             <td class="t1"><span class="table-numb">140%</span> <br> <span class="table-text">Qubit's top customers <br> annual growth rate.</span></td>
-                            <td class="t1"><span class="table-numb">9.5m</span> <br> Personalized experiences <br> delivered every hour.</td>
+                            <td class="t1"><span class="table-numb">9.5m</span> <br> <span class="table-text">Personalized experiences <br> delivered every hour.</span></td>
                         </tr>
                         <tr>
                             <td class="t1"><span class="table-numb">$20bn</span> <br> <span class="table-text">Online sales generated <br> by our customers in 2020.</span></td>
-                            <td class="t1"><span class="table-numb">4.4m</span> <br> Shoppers influenced <br> by Qubit every day.</td>
+                            <td class="t1"><span class="table-numb">4.4m</span> <br> <span class="table-text">Shoppers influenced <br> by Qubit every day.</span></td>
                         </tr>
                         <tr>
                             <td class="t1"><span class="table-numb">364</span> <br> <span class="table-text">Ecommerce stores are <br> growing faster with Qubit.</span></td>
-                            <td class="t1"><span class="table-numb">$1.6bn</span> <br> Incremental revenue generated <br> by our customers in 2020.*</td>
+                            <td class="t1"><span class="table-numb">$1.6bn</span> <br> <span class="table-text">Incremental revenue generated <br> by our customers in 2020.*</span></td>
                         </tr>
                     </table>
                 </div>
@@ -169,25 +173,35 @@
         <div class="container">
             <div class="section6-block">
                 <h2 class="section6-title">Trusted by leading brands.</h2>
-                <div class="section6-cards">
-                    <img  class="section6-arrow" src="./img/section6/arrows/Frame (11).svg" alt="">
-                    <div class="section6-cards_item">
-                        <img class="section6-cards_photo" src="./img/section6/photo/photo1.png" alt="">
-                        <img class="section6-cards_logo" src="./img/section6/logo/Rectangle (3).png" alt="">
-                        <p class="section6-cards_text">Clinique builds <br> relationships with <br> millions of customers <br> each year.</p>
-                    </div>
-                    <div class="section6-cards_item">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="section6-cards_item">
+                            <img class="section6-cards_photo" src="./img/section6/photo/photo1.png" alt="">
+                            <img class="section6-cards_logo" src="./img/section6/logo/Rectangle (9).svg" alt="">
+                            <p class="section6-cards_text">Clinique builds <br> relationships with <br> millions of customers <br> each year.</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="section6-cards_item">
                         <img class="section6-cards_photo" src="./img/section6/photo/photo2.png" alt="">
-                        <img class="section6-cards_logo" src="./img/section6/logo/Rectangle (4).png" alt="">
+                        <img class="section6-cards_logo" src="./img/section6/logo/Rectangle (10).svg" alt="">
                         <p class="section6-cards_text">River Island transforms <br> the customer experience <br> with personalization.</p>
+                    </div></div>
+                      <div class="swiper-slide">
+                        <div class="section6-cards_item">
+                            <img class="section6-cards_photo" src="./img/section6/photo/photo3.png" alt="">
+                            <div class="section6-cards_logo3">
+                                <img class="section6-cards_logo" src="./img/section6/logo/Rectangle (11).svg" alt="">
+                            </div>
+                            <p class="section6-cards_text">MandM Direct drives <br> increase in revenue with <br> deep learning recs</p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="section6-cards_item">
-                        <img class="section6-cards_photo" src="./img/section6/photo/photo3.png" alt="">
-                        <img class="section6-cards_logo" src="./img/section6/logo/Rectangle (5).png" alt="">
-                        <p class="section6-cards_text">MandM Direct drives <br> increase in revenue with <br> deep learning recs</p>
-                    </div>
-                    <img class="section6-arrow" src="./img/section6/arrows/Frame (12).svg" alt="">
-                </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+                 
             </div>
         </div>
     </section>
@@ -266,11 +280,13 @@
     </section>
 
     <section class="section9">
-        <div class="section9-wrapper">
-            <h3 class="section9-title">Book a demo today.</h3>
-            <div class="section9-reg">
-                <input type="text" class="section9-input" placeholder="Enter you email">
-                <button class="section9-btn">Book a demo</button>
+        <div class="container">
+            <div class="section9-wrapper">
+                <h3 class="section9-title">Book a demo today.</h3>
+                <div class="section9-reg">
+                    <input type="text" class="section9-input" placeholder="Enter you email">
+                    <button class="section9-btn">Book a demo</button>
+                </div>
             </div>
         </div>
     </section>
@@ -292,63 +308,83 @@
     </section>
 
     <footer class="footer">
-        <div class="footer-wrapper">
-            <div class="footer-cards">
-                <div class="footer-cards_item1">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-cards">
+                    <div class="footer-cards_item1">
+                        <div class="footer-cards_item">
+                            <h4 class="footer-cards-title">Featured Capabilities</h4>
+                        <p class="footer-cards-text">A/B testing</p>
+                        <p class="footer-cards-text">Abandonment recovery</p>
+                        <p class="footer-cards-text">Customer insights</p>
+                        <p class="footer-cards-text">Customer polling and <br> feedback</p>
+                        <p class="footer-cards-text">Customer segmentation</p>
+                        <p class="footer-cards-text">Data collection</p>
+                        <p class="footer-cards-text">Ecommerce <br> merchandising</p>
+                        </div>
+                        <div class="footer-cards_item2">
+                            <p class="footer-cards-text">Custom machine learning</p>
+                            <p class="footer-cards-text">Journey Personalization</p>
+                            <p class="footer-cards-text">Mobile app <br> personalization</p>
+                            <p class="footer-cards-text">Cross-channel <br> personalization</p>
+                            <p class="footer-cards-text">Social proofing</p>
+                            <p class="footer-cards-text">Website personalization</p>
+                        </div>
+                    </div>
+                    
                     <div class="footer-cards_item">
-                        <h4 class="footer-cards-title">Featured Capabilities</h4>
-                    <p class="footer-cards-text">A/B testing</p>
-                    <p class="footer-cards-text">Abandonment recovery</p>
-                    <p class="footer-cards-text">Customer insights</p>
-                    <p class="footer-cards-text">Customer polling and <br> feedback</p>
-                    <p class="footer-cards-text">Customer segmentation</p>
-                    <p class="footer-cards-text">Data collection</p>
-                    <p class="footer-cards-text">Ecommerce <br> merchandising</p>
+                        <h4 class="footer-cards-title">Products</h4>
+                        <p class="footer-cards-text">1:1 Product <br> recommendations</p>
+                        <p class="footer-cards-text">1:1 Product badging</p>
+                        <p class="footer-cards-text">1:1 Journey personalization</p>
+                        <p class="footer-cards-text">Personalized content</p>
+                        <p class="footer-cards-text">Product insights</p>
                     </div>
-                    <div class="footer-cards_item2">
-                        <p class="footer-cards-text">Custom machine learning</p>
-                        <p class="footer-cards-text">Journey Personalization</p>
-                        <p class="footer-cards-text">Mobile app <br> personalization</p>
-                        <p class="footer-cards-text">Cross-channel <br> personalization</p>
-                        <p class="footer-cards-text">Social proofing</p>
-                        <p class="footer-cards-text">Website personalization</p>
+                    <div class="footer-cards_item">
+                        <h4 class="footer-cards-title">Resources</h4>
+                        <p class="footer-cards-text">Resources</p>
+                        <p class="footer-cards-text">Customers</p>
+                        <p class="footer-cards-text">Qubit Blog.</p>
+                        <p class="footer-cards-text">Glossary</p>
+                    </div>
+                    <div class="footer-cards_item">
+                        <h4 class="footer-cards-title">Company</h4>
+                        <p class="footer-cards-text">Why Qubit?</p>
+                        <p class="footer-cards-text">About us</p>
+                        <p class="footer-cards-text">Careers</p>
+                        <p class="footer-cards-text">Press</p>
+                        <p class="footer-cards-text">Contact</p>
+                    </div>
+                    <div class="footer-cards_item">
+                        <p id="footer-cards-text">Working with us</p>
+                        <p class="footer-cards-text">Legal</p>
                     </div>
                 </div>
-                
-                <div class="footer-cards_item">
-                    <h4 class="footer-cards-title">Products</h4>
-                    <p class="footer-cards-text">1:1 Product <br> recommendations</p>
-                    <p class="footer-cards-text">1:1 Product badging</p>
-                    <p class="footer-cards-text">1:1 Journey personalization</p>
-                    <p class="footer-cards-text">Personalized content</p>
-                    <p class="footer-cards-text">Product insights</p>
+                <div class="footer-logo">
+                    <img class="footer-logo_img" src="./img/footer/Rectangle (9).png" alt="logo">
+                    <p class="footer-logo_text">© 2021 Qubit. All rights reserved.</p>
                 </div>
-                <div class="footer-cards_item">
-                    <h4 class="footer-cards-title">Resources</h4>
-                    <p class="footer-cards-text">Resources</p>
-                    <p class="footer-cards-text">Customers</p>
-                    <p class="footer-cards-text">Qubit Blog.</p>
-                    <p class="footer-cards-text">Glossary</p>
-                </div>
-                <div class="footer-cards_item">
-                    <h4 class="footer-cards-title">Company</h4>
-                    <p class="footer-cards-text">Why Qubit?</p>
-                    <p class="footer-cards-text">About us</p>
-                    <p class="footer-cards-text">Careers</p>
-                    <p class="footer-cards-text">Press</p>
-                    <p class="footer-cards-text">Contact</p>
-                </div>
-                <div class="footer-cards_item">
-                    <p id="footer-cards-text">Working with us</p>
-                    <p class="footer-cards-text">Legal</p>
-                </div>
+                <a href="#"><img  class="footer-img" src="./img/footer/Group.png" alt=""></a>
             </div>
-            <div class="footer-logo">
-                <img class="footer-logo_img" src="./img/footer/Rectangle (9).png" alt="logo">
-                <p class="footer-logo_text">© 2021 Qubit. All rights reserved.</p>
-            </div>
-            <a href="#"><img  class="footer-img" src="./img/footer/Group.png" alt=""></a>
         </div>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      centeredSlides: true,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+      </script>
 </body>
 </html>
