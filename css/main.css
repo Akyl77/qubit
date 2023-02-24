@@ -11,6 +11,8 @@ body{
     width: 1440px;
 }
 
+            /* Navigation */
+
 .nav{
     background-color: #FFFFFF;
     color: #1C1C1C;
@@ -56,6 +58,12 @@ body{
     color: #1C1C1C;
 }
 
+            /* Header */
+
+.header{
+    /* background-image: url(../img/Rectangle.svg); */
+}
+
 .header-wrapper{ 
     background-image: url(../img/Rectangle.svg);
     min-height: 695px;
@@ -83,12 +91,19 @@ body{
 }
 
 .header-description{
-    width: 438px;
-    height: 120px;
     font-size: 18px;
     font-weight: 400;
     color: #000000;
     line-height: 30px;
+}
+
+.header-description span{
+    font-weight: bold;
+}
+
+.input-btn{
+    display: flex;
+    align-items: center;
 }
 
 .header-input{
@@ -98,6 +113,11 @@ body{
     border: 1px solid #6F2CFF;
     border-radius: 27.5px 0px 0px 27.5px;
         
+}
+input::placeholder{
+    font-size: 15px;
+    font-weight: 400;
+    padding: 13px 127px 11px 26px;
 }
 
 .header-btn{
@@ -109,11 +129,7 @@ body{
     left: -3.6px;
 }
 
-input::placeholder{
-    font-size: 15px;
-    font-weight: 400;
-    padding: 13px 127px 11px 26px;
-}
+            /* Section1 */
 
 .section1-title{
     font-size: 18px;
@@ -139,9 +155,10 @@ input::placeholder{
     width: 162px;
 }
 
+            /* Section2 */
+
 .section2-wrapper{
     display: flex;
-    height: 660px;
     margin-top: 100px;
     background-color: #FFFFFF;
 }
@@ -212,6 +229,8 @@ input::placeholder{
     line-height: 22px;
 }
 
+            /* Section3 */
+
 .section3-title{
     font-weight: 700;
     font-size: 40px;
@@ -229,10 +248,10 @@ input::placeholder{
 .section3-cards{
     display: flex;
     margin-top: 70px;
+    justify-content: space-around;
 }
 
 .section3-cards_item{
-    margin: 0 auto; 
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -251,7 +270,9 @@ input::placeholder{
     text-align: center;
 }
 
-.section4-block{
+            /* Section4 */
+
+.section4-wrapper{
     height: 1064px;
     margin-top: 91px;
     display: flex;
@@ -300,6 +321,8 @@ input::placeholder{
     padding: 11px 45px;
 }
 
+            /* Section5 */
+
 .section5-title{
     font-size: 40px;
     font-weight: 700;
@@ -310,12 +333,12 @@ input::placeholder{
 .section5-cards{
     margin-top: 70px;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 200px;
+    gap: 160px;
 }
 
 .section5-cards_item{
-    margin: 0 auto; 
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -332,6 +355,21 @@ input::placeholder{
     font-size: 15px;
     font-weight: 400;
     text-align: center;
+}
+
+            /* Section6 */
+
+.section6-wrapper{
+    height: 751px;
+    margin-top: 220px;
+    background-color: #F5F5F5;
+}
+
+.section6-title{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    padding: 80px;
 }
 
 /* Slides */
@@ -361,20 +399,6 @@ input::placeholder{
     height: 438px;
     margin: 20px auto;
   }
-
-.section6-block{
-    height: 751px;
-    margin-top: 220px;
-    background-color: #F5F5F5;
-}
-
-.section6-title{
-    font-size: 40px;
-    font-weight: 700;
-    text-align: center;
-    padding-top: 88px;
-    margin-bottom: 75px;
-}
 
 .section6-cards_item{
     display: flex;
@@ -408,6 +432,8 @@ input::placeholder{
     width: 100%;
     height: 50;
 }
+
+            /* Section7 */
 
 .section7-title{
     font-size: 40px;
@@ -468,13 +494,13 @@ input::placeholder{
     padding-bottom: 9.25px;
 }
 
-.section8-block{
-    display: flex;
-    background-color: #F5F5F5;
-}
+            /* Section8 */
 
-.section8-left{
-    padding: 169px 0 0 110px;
+.section8-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F5F5;
 }
 
 .section8-title{
@@ -504,9 +530,11 @@ input::placeholder{
     margin: 40px 90px;
 }
 
+            /* Section9 */
+
 .section9-wrapper{
-    min-height: 329px;
     background-image: url(../img/section9/Rectangle\ \(7\).png);
+    min-height: 329px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -521,6 +549,7 @@ input::placeholder{
 }
 
 .section9-reg{
+    display: flex;
     margin-top: 39px;
 }
 
@@ -541,6 +570,8 @@ input::placeholder{
     left: -3.6px;
 }
 
+            /* Section10 */
+
 .section10-wrapper{
     display: flex;
     flex-direction: column;
@@ -558,6 +589,8 @@ input::placeholder{
     gap: 30px;
     margin-bottom: 45px;
 }
+
+            /* Footer */
 
 .footer-wrapper{
     min-height: 547px;
@@ -614,28 +647,35 @@ input::placeholder{
     padding: 0 0 82px 110px;
 }
 
-@media(max-width:769px){
+@media(max-width:768px){
 
     /* Nav */
+    .nav-row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
     .logo{
-    font-size: 40px;
+    font-size: 80px;
     }
 
     .nav-list{
-    gap: 32px;
+    gap: 45px;
     } 
 
     .nav-list_item a{
-    font-size: 24px; 
+    font-size: 33px; 
     }
 
     .login-btn{
-        font-size: 20px;
+        font-size: 30px;
 
     }
 
     .login-login{
-        font-size: 24px;
+        font-size: 30px;
     }
 
     /* Header */
@@ -643,68 +683,271 @@ input::placeholder{
         min-height: unset;
     }
 
+    .header-wrapper{
+        padding: 130px 40px 60px 40px;
+    }
+
     .header-text{
-        font-size: 25px;
+        font-size: 40px;
+    }
+
+    .header-title{
+        font-size: 74px;
+    }
+
+    .header-title span{
+        font-size: 74px;
     }
 
     .header-description{
-        font-size: 22px;
+        font-size: 33px;
+        line-height: 55px;
+        padding-top: 50px;
     }
 
     .header-input{
-        margin-top: 20px;
+        height: 60px;
+    }
+    input::placeholder{
+        font-size: 27px;
+    }
+
+    .header-btn{
+        padding: 15px 45px;
+        font-size: 25px;
     }
 
     /* Section1 */
     .section1-title{
-        font-size: 24px;
+        font-size: 54px;
     }
 
     .section1-text{
-        font-size: 24px;
+        width: 220px;
+        font-size: 34px;
     }
 
     /* Section2 */
+    .section2-wrapper{
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .section2-title{
+        font-size: 60px;
+    }
+
+    .left{
+        width: max-content;
+        padding: 0px;
+    }
+
     .left-btn_btn{
-        font-size: 20px;
+        font-size: 35px;
     }
 
     .left-btn_text{
-        font-size: 18px;
+        font-size: 33px;
     }
 
     .left-text{
-        font-size: 22px;
+        font-size: 35px;
+        
     }
 
     .left-text1{
-        font-size: 22px;
+        font-size: 35px;
+        line-height: 80px;
+    }
+
+    .t1{
+        width: max-content;
+    }
+
+    .table-numb{
+        font-size: 60px;
     }
 
     .table-text{
-        font-size: 20px;
+        font-size: 35px;
+        line-height: 40px;
     }
 
     /* Section3 */
+    .section3-title{
+        font-size: 60px;
+    }
+
+    .section3-text{
+        font-size: 34px;
+    }
+
+    .section3-cards{
+        flex-direction: column;
+        gap: 50px;
+    }
+
     .section3-cards_title{
-        font-size: 24px;
+        font-size: 44px;
     }
 
     .section3-cards_desc{
-        font-size: 20px;
+        font-size: 40px;
     }
 
     /* Section4 */
+
+    .section4-title{
+        font-size: 60px;
+    }
+
     .section4-text{
-        font-size: 20px;
+        font-size: 34px;
+        text-align: center;
     }
 
     .section4-btn{
-        font-size: 20px;
+        font-size: 35px;
     }
 
     .section4-btn2{
-        font-size: 20px;
+        font-size: 35px;
     }
     
+    /* Section5 */
+    .section5-title{
+        font-size: 60px;
+    }
+
+    .section5-cards{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .section5-cards_title{
+        font-size: 44px;
+    }
+
+    .section5-cards_desc{
+        font-size: 40px;
+    }
+
+    /* Section6 */
+    .section6-wrapper{
+        margin-top: 0px;
+        height: 1000px;
+    }
+
+    .section6-title{
+        font-size: 60px;
+    }
+
+    .swiper{
+        width: 1200px;
+        height: 700px;
+    }
+
+    .section6-cards_text{
+        font-size: 40px;
+    }
+
+    /* Section7 */
+    .section7-title{
+        font-size: 60px;
+    }
+
+    .section7-text{
+        font-size: 34px;
+    }
+
+    .section7-cards{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .section7-cards-item{
+        width: 700px;
+        height: 300px;
+    }
+
+    .section7-cards-item_title1{
+        font-size: 35px;
+    }
+
+    .section7-cards-item_text{
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .section7-cards-item_text1{
+        font-size: 30px;
+    }
+
+    /* Section8 */
+    .section8-wrapper{
+        flex-direction: column;
+    }
+
+    .section8-left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section8-title{
+        font-size: 60px;
+    }
+
+    .section8-text{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .section8-btn{
+        font-size: 35px;
+    }
+
+    /* Section9 */
+    .section9-title{
+        font-size: 60px;
+    }
+
+    .section9-btn{
+        font-size: 30px;
+        padding: 5px 40px;
+    }
+
+    /* Section10 */
+    .section10-text{
+        font-size: 30px;
+    }
+
+    .socials{
+        gap: 50px;
+    }
+
+    .social-item{
+        width: 30px;
+        height: 30px;
+    }
+
+    .social-item_img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Footer */
+    .footer-cards-title{
+        font-size: 20px;
+    }
+
+    .footer-cards-text{
+        font-size: 18px;
+    }
+
+    .footer-logo_text{
+        font-size: 18px;
+    }
 }
