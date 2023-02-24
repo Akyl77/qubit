@@ -65,10 +65,11 @@
   /* Form */
   
   input, textarea, button, select {
-    font-family: inherit;
+      font-family: inherit;
       font-size: inherit;
       color: inherit;
       background-color: transparent;
+      padding-left: 30px;
   }
   
   input::-ms-clear {
